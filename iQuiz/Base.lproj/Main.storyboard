@@ -15,25 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quizLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WdP-Mj-c5I">
-                                <rect key="frame" x="76" y="143" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WdP-Mj-c5I">
+                                <rect key="frame" x="-1503.6666666666667" y="143" width="3400.3333333333335" height="223.66666666666663"/>
                                 <color key="tintColor" red="0.0" green="0.75370097160000005" blue="0.836247623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-9b-Nkh">
-                                <rect key="frame" x="119" y="449" width="160" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-9b-Nkh">
+                                <rect key="frame" x="64" y="408.66666666666669" width="265" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.7623615265" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.75370097160000005" blue="0.836247623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Quiz">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wp0-Ab-jle"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.77505177260000002" blue="0.86109119649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WdP-Mj-c5I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="0DT-pa-Ped"/>
+                            <constraint firstItem="WdP-Mj-c5I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xY-0q-dJx"/>
+                            <constraint firstItem="vyC-9b-Nkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3g9-id-NaQ"/>
+                            <constraint firstItem="vyC-9b-Nkh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KdC-jF-lCE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vyC-9b-Nkh" secondAttribute="trailing" constant="64" id="Mwv-rD-z6H"/>
+                            <constraint firstItem="vyC-9b-Nkh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="NgE-sp-TKb"/>
+                            <constraint firstItem="vyC-9b-Nkh" firstAttribute="top" secondItem="WdP-Mj-c5I" secondAttribute="bottom" constant="42" id="fZe-lD-diJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonQuizStart" destination="vyC-9b-Nkh" id="nlc-8A-wHt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
