@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WdP-Mj-c5I">
-                                <rect key="frame" x="-1503.6666666666667" y="187" width="3400.3333333333335" height="179.66666666666663"/>
+                                <rect key="frame" x="-1503.6666666666667" y="187" width="3400.3333333333339" height="179.66666666666663"/>
                                 <color key="tintColor" red="0.0" green="0.75370097160000005" blue="0.836247623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-9b-Nkh">
@@ -68,7 +68,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z5-Vd-vld">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z5-Vd-vld">
                                 <rect key="frame" x="130" y="356" width="133" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.7623615265" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -78,8 +78,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="OCW-iA-mad" eventType="touchUpInside" id="VUh-Aa-ceX"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7x-Nx-I04">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7x-Nx-I04">
                                 <rect key="frame" x="130" y="415" width="133" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.7623615265" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -89,8 +92,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="OCW-iA-mad" eventType="touchUpInside" id="gsK-S1-WOn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-Wj-0G1">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-Wj-0G1">
                                 <rect key="frame" x="130" y="474" width="133" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.7623615265" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -100,6 +106,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="OCW-iA-mad" eventType="touchUpInside" id="cRU-fz-wQV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4H8-hl-qk0"/>
@@ -120,6 +129,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3e5-DT-hxe"/>
+                    <connections>
+                        <outlet property="tituloQuestaoLabel" destination="Bgl-kF-51L" id="wgK-LC-9Wu"/>
+                        <outletCollection property="botoesRespostas" destination="8Z5-Vd-vld" collectionClass="NSMutableArray" id="gSo-aB-RdB"/>
+                        <outletCollection property="botoesRespostas" destination="g7x-Nx-I04" collectionClass="NSMutableArray" id="Kzh-OJ-zKP"/>
+                        <outletCollection property="botoesRespostas" destination="cs1-Wj-0G1" collectionClass="NSMutableArray" id="vs9-Gz-DWX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7o-5Y-7nV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
