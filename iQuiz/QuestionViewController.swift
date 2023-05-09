@@ -16,7 +16,12 @@ class QuestionViewController: UIViewController {
     @IBOutlet var botoesRespostas: [UIButton]!
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
-        print(sender.tag)
+        let usuarioAcertouResposta = questoes[numeroQuestao].respostaCorreta == sender.tag
+        
+        if usuarioAcertouResposta {
+            pontuacao += 1
+            print("O usuário acertou")
+        }
     }
     
     
@@ -38,6 +43,10 @@ class QuestionViewController: UIViewController {
     
     func configurarQuestao() {
         tituloQuestaoLabel.text = questoes[numeroQuestao].titulo
+        for botao in botoesRespostas {
+            let tituloBotao = questoes[numeroQuestao].respostas[botao.tag]
+            botao.setTitle(tituloBotao, for: .normal)
+        }
     }
     
 }
