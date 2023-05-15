@@ -14,6 +14,7 @@
 		180D118B29FD118A000DDBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180D118A29FD118A000DDBEB /* Assets.xcassets */; };
 		180D118E29FD118A000DDBEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180D118C29FD118A000DDBEB /* LaunchScreen.storyboard */; };
 		185F47982A011974004BD795 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F47972A011974004BD795 /* QuestionViewController.swift */; };
+		18C9DF6A2A10EE0A00D6164C /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9DF692A10EE0A00D6164C /* DesempenhoViewController.swift */; };
 		18FE0E672A08ED62002A6882 /* Questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE0E662A08ED62002A6882 /* Questao.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		180D118D29FD118A000DDBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180D118F29FD118A000DDBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185F47972A011974004BD795 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		18C9DF692A10EE0A00D6164C /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
 		18FE0E662A08ED62002A6882 /* Questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				180D118F29FD118A000DDBEB /* Info.plist */,
 				185F47972A011974004BD795 /* QuestionViewController.swift */,
 				18FE0E662A08ED62002A6882 /* Questao.swift */,
+				18C9DF692A10EE0A00D6164C /* DesempenhoViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				180D118229FD1189000DDBEB /* AppDelegate.swift in Sources */,
 				185F47982A011974004BD795 /* QuestionViewController.swift in Sources */,
 				18FE0E672A08ED62002A6882 /* Questao.swift in Sources */,
+				18C9DF6A2A10EE0A00D6164C /* DesempenhoViewController.swift in Sources */,
 				180D118429FD1189000DDBEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,6 @@ struct Questao {
 
 let questoes: [Questao] = [
     Questao(titulo: "Qual o feitiço para desarmar o oponente, em Harry Potter?", respostas: ["Expetro Patronum", "Avada Redrava", "Expelliarmus"], respostaCorreta: 2),
-    Questao(titulo: "Qual o feitiço para desarmar o oponente, em Harry Potter?", respostas: ["Expetro Patronum", "Avada Redrava", "Expelliarmus"], respostaCorreta: 2),
-    Questao(titulo: "Qual o feitiço para desarmar o oponente, em Harry Potter?", respostas: ["Expetro Patronum", "Avada Redrava", "Expelliarmus"], respostaCorreta: 2)
+    Questao(titulo: "Qual o feitiço para desarmar o oponente, em Harry Potter?", respostas: ["Expetro Patronum", "Avada Redrava", "Teste 2"], respostaCorreta: 2),
+    Questao(titulo: "Qual o feitiço para desarmar o oponente, em Harry Potter?", respostas: ["Expetro Patronum", "Avada Redrava", "Teste 3"], respostaCorreta: 2)
 ]
