@@ -134,6 +134,7 @@
                         <outletCollection property="botoesRespostas" destination="8Z5-Vd-vld" collectionClass="NSMutableArray" id="gSo-aB-RdB"/>
                         <outletCollection property="botoesRespostas" destination="g7x-Nx-I04" collectionClass="NSMutableArray" id="Kzh-OJ-zKP"/>
                         <outletCollection property="botoesRespostas" destination="cs1-Wj-0G1" collectionClass="NSMutableArray" id="vs9-Gz-DWX"/>
+                        <segue destination="eQn-Vl-ByM" kind="show" identifier="IrParaTelaDesempenho" id="iRU-2C-Sil"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7o-5Y-7nV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -149,19 +150,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você finalizou o iQuiz " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDe-Nf-vlN">
-                                <rect key="frame" x="64" y="171" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="215" width="265" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentual final: 20%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6C-vq-uLD">
-                                <rect key="frame" x="64" y="468.33333333333331" width="265" height="66.999999999999943"/>
+                                <rect key="frame" x="64" y="512.33333333333337" width="265" height="67"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLg-Yf-jQp">
-                                <rect key="frame" x="64" y="607.33333333333337" width="265" height="41"/>
+                                <rect key="frame" x="64" y="651.33333333333337" width="265" height="41"/>
                                 <color key="backgroundColor" red="1" green="0.7623615265" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -173,7 +174,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acertou 2 de 10 Questões" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g4-ck-zZG">
-                                <rect key="frame" x="64" y="319.66666666666669" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="363.66666666666669" width="265" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -196,6 +197,7 @@
                             <constraint firstItem="2g4-ck-zZG" firstAttribute="leading" secondItem="jrk-64-PNp" secondAttribute="leading" constant="64" id="uzr-ZR-YMH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tB8-cG-L8g"/>
                     <connections>
                         <outlet property="botaoReiniciarQuiz" destination="QLg-Yf-jQp" id="OpJ-ya-Pme"/>
                         <outlet property="percentualLabel" destination="P6C-vq-uLD" id="Hfw-Yc-4Zp"/>

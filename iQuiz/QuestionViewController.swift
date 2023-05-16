@@ -29,9 +29,13 @@ class QuestionViewController: UIViewController {
         if numeroQuestao < questoes.count - 1{
             numeroQuestao += 1
             Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(configurarQuestao), userInfo: nil, repeats: false)
+        } else {
+            navegaParaTelaDesempenho()
         }
-        
-       
+    }
+    
+    func navegaParaTelaDesempenho() {
+        performSegue(withIdentifier: "IrParaTelaDesempenho", sender: nil)
     }
     
     
@@ -58,6 +62,11 @@ class QuestionViewController: UIViewController {
             botao.setTitle(tituloBotao, for: .normal)
             botao.backgroundColor = .yellow
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let desempenhoVC = segue.destination as? DesempenhoViewController else { return }
+        desempenhoVC.pontuacao = pontuacao
     }
     
 }

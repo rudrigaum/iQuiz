@@ -9,6 +9,9 @@ import UIKit
 
 class DesempenhoViewController: UIViewController {
     
+    var pontuacao: Int?
+    
+    
     @IBOutlet weak var resultadoLabel: UILabel!
     @IBOutlet weak var percentualLabel: UILabel!
     @IBOutlet weak var botaoReiniciarQuiz: UIButton!
