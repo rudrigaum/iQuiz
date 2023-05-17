@@ -62,18 +62,34 @@
 		180D118029FD1189000DDBEB /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				18F8BD5C2A14FC0C00180C77 /* Modelo */,
+				18F8BD592A14FBD700180C77 /* View Controller */,
 				180D118129FD1189000DDBEB /* AppDelegate.swift */,
 				180D118329FD1189000DDBEB /* SceneDelegate.swift */,
-				180D118529FD1189000DDBEB /* ViewController.swift */,
 				180D118729FD1189000DDBEB /* Main.storyboard */,
 				180D118A29FD118A000DDBEB /* Assets.xcassets */,
 				180D118C29FD118A000DDBEB /* LaunchScreen.storyboard */,
 				180D118F29FD118A000DDBEB /* Info.plist */,
-				185F47972A011974004BD795 /* QuestionViewController.swift */,
 				18FE0E662A08ED62002A6882 /* Questao.swift */,
-				18C9DF692A10EE0A00D6164C /* DesempenhoViewController.swift */,
 			);
 			path = iQuiz;
+			sourceTree = "<group>";
+		};
+		18F8BD592A14FBD700180C77 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				180D118529FD1189000DDBEB /* ViewController.swift */,
+				185F47972A011974004BD795 /* QuestionViewController.swift */,
+				18C9DF692A10EE0A00D6164C /* DesempenhoViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		18F8BD5C2A14FC0C00180C77 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modelo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
